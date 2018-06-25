@@ -17,8 +17,17 @@ namespace SQLConsoleApp
             var repo = new ArtistsRepo();
             //var result = repo.GetCount();
             //var result = repo.Delete(2);
-
-            Console.WriteLine(result);
+            //while (true)
+            //{
+            //    var artists = repo.Search(Console.ReadLine());
+            //    foreach (var artist in artists)
+            //    {
+            //        Console.WriteLine(artist); 
+            //    }
+            //}
+            var artist = repo.GetById(int.Parse(Console.ReadLine()));
+            Console.WriteLine(artist);
         }
     }
 }
+
