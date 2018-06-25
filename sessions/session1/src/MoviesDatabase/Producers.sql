@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Producers]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [FullName] NVARCHAR(MAX) NULL
+)
