@@ -31,6 +31,14 @@ namespace MoviesManager
             return artistsCount;
         }
 
-
+        public bool Delete(int id)
+        {
+            var conn = new SqlConnection(connStr);
+            conn.Open();
+            var cmd = new SqlCommand("delete from Artists where Artists.Id = " + id, conn);
+            int modifiedCount = cmd.ExecuteNonQuery();
+            conn.Close();
+            return modifiedCount > 0;
+        }
     }
 }

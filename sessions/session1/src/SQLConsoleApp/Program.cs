@@ -15,8 +15,10 @@ namespace SQLConsoleApp
         static void Main(string[] args)
         {
             var repo = new ArtistsRepo();
-            var count = repo.GetCount();
-            Console.WriteLine(count);
+            //var result = repo.GetCount();
+            //var result = repo.Delete(2);
+
+            Console.WriteLine(result);
         }
     }
 }
