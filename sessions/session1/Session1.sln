@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MoviesDatabase", "src\MoviesDatabase\MoviesDatabase.sqlproj", "{EFF648FE-7D0D-448E-A52C-59C94B34D284}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLConsoleApp", "src\SQLConsoleApp\SQLConsoleApp.csproj", "{E36E7E72-989B-4B45-9DD9-00B5BB7A1367}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,18 @@ Global
 		{EFF648FE-7D0D-448E-A52C-59C94B34D284}.Release|x86.ActiveCfg = Release|Any CPU
 		{EFF648FE-7D0D-448E-A52C-59C94B34D284}.Release|x86.Build.0 = Release|Any CPU
 		{EFF648FE-7D0D-448E-A52C-59C94B34D284}.Release|x86.Deploy.0 = Release|Any CPU
+		{E36E7E72-989B-4B45-9DD9-00B5BB7A1367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E36E7E72-989B-4B45-9DD9-00B5BB7A1367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E36E7E72-989B-4B45-9DD9-00B5BB7A1367}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E36E7E72-989B-4B45-9DD9-00B5BB7A1367}.Debug|x64.Build.0 = Debug|Any CPU
+		{E36E7E72-989B-4B45-9DD9-00B5BB7A1367}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E36E7E72-989B-4B45-9DD9-00B5BB7A1367}.Debug|x86.Build.0 = Debug|Any CPU
+		{E36E7E72-989B-4B45-9DD9-00B5BB7A1367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E36E7E72-989B-4B45-9DD9-00B5BB7A1367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E36E7E72-989B-4B45-9DD9-00B5BB7A1367}.Release|x64.ActiveCfg = Release|Any CPU
+		{E36E7E72-989B-4B45-9DD9-00B5BB7A1367}.Release|x64.Build.0 = Release|Any CPU
+		{E36E7E72-989B-4B45-9DD9-00B5BB7A1367}.Release|x86.ActiveCfg = Release|Any CPU
+		{E36E7E72-989B-4B45-9DD9-00B5BB7A1367}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
