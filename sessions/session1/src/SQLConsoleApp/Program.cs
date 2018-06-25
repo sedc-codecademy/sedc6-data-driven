@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MoviesManager;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -13,21 +14,9 @@ namespace SQLConsoleApp
         static string GetFullName() => "dzevo";
         static void Main(string[] args)
         {
-            //int modifiedCount = db.SaveChanges();
-            //cmd.ExecuteNonQuery();
-
-            //var artist = db.artists.first();
-            //cmd.ExecuteReader();
-
-            //var artistsCount = db.artists.Count();
-            //cmd.ExecuteScalar();
-
-            var conn = new SqlConnection(connStr);
-            conn.Open();
-            var cmd = new SqlCommand("select count(*) from Artists", conn);
-            object scalar = cmd.ExecuteScalar();
-            int artistsCount = (int)scalar;
-            conn.Close();
+            var repo = new ArtistsRepo();
+            var count = repo.GetCount();
+            Console.WriteLine(count);
         }
     }
 }
