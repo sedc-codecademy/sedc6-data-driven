@@ -13,6 +13,6 @@ namespace Music.DataLayer.Contracts
     public interface ISongsReadOnlyRepository
     {
         Song GetById(int id);
-        IEnumerable<Song> GetAll(int skip = 0, int take = 100);
+        IEnumerable<Song> GetAll(uint skip = 0, uint take = 100);
     }
 }

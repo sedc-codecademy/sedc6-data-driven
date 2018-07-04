@@ -40,7 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ISongsRepository.cs" />
+    <Compile Include="BL\ISongsProvider.cs" />
+    <Compile Include="DL\ISongsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
