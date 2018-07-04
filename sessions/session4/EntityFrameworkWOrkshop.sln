@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music.WebApp", "Music.WebAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music.BusinessLayer", "Music.BusinessLayer\Music.BusinessLayer.csproj", "{64581A89-1852-4D94-9C27-8B1FB3EA06C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music.DataLayer.Contracts", "Music.DataLayer.Contracts\Music.DataLayer.Contracts.csproj", "{348D2249-D76B-452D-B472-F91BEF8F10AA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music.Domain.Models", "Music.Domain.Models\Music.Domain.Models.csproj", "{17F63A89-F2A4-4EFB-B472-C246E7352767}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music.Contracts", "Music.Contracts\Music.Contracts.csproj", "{348D2249-D76B-452D-B472-F91BEF8F10AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,18 +59,6 @@ Global
 		{64581A89-1852-4D94-9C27-8B1FB3EA06C4}.Release|x64.Build.0 = Release|Any CPU
 		{64581A89-1852-4D94-9C27-8B1FB3EA06C4}.Release|x86.ActiveCfg = Release|Any CPU
 		{64581A89-1852-4D94-9C27-8B1FB3EA06C4}.Release|x86.Build.0 = Release|Any CPU
-		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Debug|x64.Build.0 = Debug|Any CPU
-		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Debug|x86.Build.0 = Debug|Any CPU
-		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Release|x64.ActiveCfg = Release|Any CPU
-		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Release|x64.Build.0 = Release|Any CPU
-		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Release|x86.ActiveCfg = Release|Any CPU
-		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Release|x86.Build.0 = Release|Any CPU
 		{17F63A89-F2A4-4EFB-B472-C246E7352767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{17F63A89-F2A4-4EFB-B472-C246E7352767}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17F63A89-F2A4-4EFB-B472-C246E7352767}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -83,6 +71,18 @@ Global
 		{17F63A89-F2A4-4EFB-B472-C246E7352767}.Release|x64.Build.0 = Release|Any CPU
 		{17F63A89-F2A4-4EFB-B472-C246E7352767}.Release|x86.ActiveCfg = Release|Any CPU
 		{17F63A89-F2A4-4EFB-B472-C246E7352767}.Release|x86.Build.0 = Release|Any CPU
+		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Debug|x64.Build.0 = Debug|Any CPU
+		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Debug|x86.Build.0 = Debug|Any CPU
+		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Release|x64.ActiveCfg = Release|Any CPU
+		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Release|x64.Build.0 = Release|Any CPU
+		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Release|x86.ActiveCfg = Release|Any CPU
+		{348D2249-D76B-452D-B472-F91BEF8F10AA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

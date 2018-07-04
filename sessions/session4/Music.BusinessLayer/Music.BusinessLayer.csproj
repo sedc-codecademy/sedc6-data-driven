@@ -51,9 +51,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Music.DataLayer.Contracts\Music.DataLayer.Contracts.csproj">
+    <ProjectReference Include="..\Music.Contracts\Music.Contracts.csproj">
       <Project>{348D2249-D76B-452D-B472-F91BEF8F10AA}</Project>
-      <Name>Music.DataLayer.Contracts</Name>
+      <Name>Music.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\Music.DataLayer\Music.DataLayer.csproj">
       <Project>{158fc031-6e3c-40a7-9eef-fdedcd1eeb01}</Project>

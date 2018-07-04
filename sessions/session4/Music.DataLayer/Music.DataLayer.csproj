@@ -111,9 +111,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Music.DataLayer.Contracts\Music.DataLayer.Contracts.csproj">
+    <ProjectReference Include="..\Music.Contracts\Music.Contracts.csproj">
       <Project>{348D2249-D76B-452D-B472-F91BEF8F10AA}</Project>
-      <Name>Music.DataLayer.Contracts</Name>
+      <Name>Music.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\Music.Domain.Models\Music.Domain.Models.csproj">
       <Project>{17F63A89-F2A4-4EFB-B472-C246E7352767}</Project>

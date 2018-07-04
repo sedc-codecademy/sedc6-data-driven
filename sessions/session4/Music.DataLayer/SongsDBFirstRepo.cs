@@ -20,7 +20,7 @@ namespace Music.DataLayer
         {
             int intSkip = skip > int.MaxValue ? int.MaxValue : (int)skip;
             int intTake = take > int.MaxValue ? int.MaxValue : (int)take;
-            List<Song> songs = _db.Songs.Skip(intSkip).Take(intTake).ToList();
+            List<Song> songs = _db.Songs.OrderBy(s=>s.Id).Skip(intSkip).Take(intTake).ToList();
             IEnumerable<domain.Song> results = songs.Select(dbSong => new domain.Song
             {
                 AlbumId = dbSong.AlbumId,

@@ -1,14 +1,12 @@
-﻿using Music.DataLayer.Contracts;
-using Music.DataLayer.Contracts.BL;
-using domain = Music.Domain.Models;
-using System;
-using System.Collections.Generic;
+﻿using domain = Music.Domain.Models;
 using Music.DataLayer;
 using System.Linq;
+using Music.DataLayer.Contracts.BL;
+using Music.DataLayer.Contracts;
 
 namespace Music.BusinessLayer
 {
-    public class SongsProvider : SongsDBFirstRepo, ISongsProvider
+    public class SongsProvider : DataLayer.SongsDBFirstRepo, ISongsProvider
     {
         private readonly ISongsRepository _repo;
         //private readonly IAlbumsRepository _repo;
