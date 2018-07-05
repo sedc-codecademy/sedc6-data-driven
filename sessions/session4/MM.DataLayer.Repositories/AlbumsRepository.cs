@@ -11,6 +11,11 @@ namespace MM.DataLayer.Repositories
     {
         private readonly dbmodels.MMContext _db;
 
+        public AlbumsRepository()
+        {
+            _db = new dbmodels.MMContext();
+        }
+
         public IEnumerable<Album> GetAll(int skip = 0, int take = 100)
         {
             skip = skip < 0 ? 0 : skip;
@@ -52,10 +57,6 @@ namespace MM.DataLayer.Repositories
         public Album Update(Album album)
         {
             throw new NotImplementedException();
-        }
-        public Album GetAlbumBySong(int songId)
-        {
-
         }
     }
 }
