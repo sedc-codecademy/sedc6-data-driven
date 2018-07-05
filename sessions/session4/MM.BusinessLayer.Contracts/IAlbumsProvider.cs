@@ -1,5 +1,4 @@
-﻿
-using MM.Common.Models;
+﻿using MM.Common.Models;
 using MM.DataLayer.Contracts;
 
 namespace MM.BusinessLayer.Contracts

@@ -30,7 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,6 +49,32 @@
   <ItemGroup>
     <Compile Include="AlbumsProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MM.BusinessLayer.Contracts\MM.BusinessLayer.Contracts.csproj">
+      <Project>{0BB2C5E0-E18B-4675-B64E-3376460D55DE}</Project>
+      <Name>MM.BusinessLayer.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MM.Common.Models\MM.Common.Models.csproj">
+      <Project>{D15F7E78-18CE-45B4-910B-26DB42E33FFC}</Project>
+      <Name>MM.Common.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MM.DataLayer.Contracts\MM.DataLayer.Contracts.csproj">
+      <Project>{ACB381BE-C2D8-41A3-AD9B-66AAE838B764}</Project>
+      <Name>MM.DataLayer.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MM.DataLayer.DbModels\MM.DataLayer.DbModels.csproj">
+      <Project>{55D4DEAC-4FD9-4CCA-BC2F-AD2994824A1F}</Project>
+      <Name>MM.DataLayer.DbModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MM.DataLayer.Repositories\MM.DataLayer.Repositories.csproj">
+      <Project>{CEFDC60A-52BE-4523-839C-EA20173B11D0}</Project>
+      <Name>MM.DataLayer.Repositories</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
