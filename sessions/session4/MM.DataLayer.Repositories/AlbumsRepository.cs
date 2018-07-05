@@ -20,7 +20,7 @@ namespace MM.DataLayer.Repositories
         {
             skip = skip < 0 ? 0 : skip;
             take = take < 0 ? 100 : take;
-            List<dbmodels.Album> results = _db.Albums.Skip(skip).Take(take).ToList();
+            List<dbmodels.Album> results = _db.Albums.OrderBy(a=>a.Id).Skip(skip).Take(take).ToList();
             return results.Select(dbAlbum => new Album
             {
                 Id = dbAlbum.Id,
