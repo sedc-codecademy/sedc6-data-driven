@@ -20,5 +20,12 @@ namespace MM.WebApi.Controllers
         {
             return Ok(_albumsProvider.GetAll(skip, take));
         }
+
+        [HttpGet]
+        [Route("~/album-by-song/{songId:min(1)}")]
+        public IHttpActionResult GetAll(int songId)
+        {
+            return Ok(_albumsProvider.GetAlbumBySongId(songId));
+        }
     }
 }
