@@ -22,10 +22,12 @@ namespace MM.BusinessLayer.Providers
 
         public IEnumerable<SongWithAlbum> GetSongsWithAlbums(int skip, int take)
         {
-            var results = _context.Songs.ToList();
+            var results = _context.Songs.Include("Album.Artist")
+                .ToList();
             var songs = new List<SongWithAlbum>();
             foreach (var song in results)
             {
+                var artistId = song.Album.Artist.Id;
                 songs.Add(new SongWithAlbum
                 {
                     Id = song.Id,
