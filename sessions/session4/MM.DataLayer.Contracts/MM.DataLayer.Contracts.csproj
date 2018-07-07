@@ -41,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IAlbumRepository.cs" />
+    <Compile Include="IArtistsRepository.cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="ISongsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

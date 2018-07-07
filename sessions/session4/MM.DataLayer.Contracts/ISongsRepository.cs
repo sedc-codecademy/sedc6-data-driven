@@ -2,7 +2,7 @@
 
 namespace MM.DataLayer.Contracts
 {
-    public interface IAlbumRepository: IRepository<Album>
+    public interface ISongsRepository: IRepository<Song>
     {
     }
 }
