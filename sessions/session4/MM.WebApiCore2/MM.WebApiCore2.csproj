@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MusicContext.Context.tt" />
+    <None Remove="MusicContext.tt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="MusicContext.Context.tt">
+      <DependentUpon>MusicContext.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
+    </Content>
+    <Content Include="MusicContext.tt">
+      <DependentUpon>MusicContext.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Album.cs">
+      <DependentUpon>MusicContext.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Artist.cs">
+      <DependentUpon>MusicContext.tt</DependentUpon>
+    </Compile>
+    <Compile Update="ArtistType.cs">
+      <DependentUpon>MusicContext.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Genre.cs">
+      <DependentUpon>MusicContext.tt</DependentUpon>
+    </Compile>
+    <Compile Update="MusicContext.Context.cs">
+      <DependentUpon>MusicContext.Context.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="MusicContext.cs">
+      <DependentUpon>MusicContext.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="MusicContext.Designer.cs">
+      <DependentUpon>MusicContext.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Song.cs">
+      <DependentUpon>MusicContext.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="MusicContext.edmx.diagram">
+      <DependentUpon>MusicContext.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+
+</Project>
