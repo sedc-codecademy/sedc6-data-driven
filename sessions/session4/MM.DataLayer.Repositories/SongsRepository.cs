@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace MM.DataLayer.Repositories
 {
-    public class SongsRepository : ISongsRepository
+    public class SongsRepository : ISongsRepository, IRepository<Song>
     {
         private readonly dbModels.MMContext context;
 
