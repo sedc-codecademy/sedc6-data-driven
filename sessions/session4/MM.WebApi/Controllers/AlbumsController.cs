@@ -9,9 +9,9 @@ namespace MM.WebApi.Controllers
     {
         private readonly IAlbumsProvider _albumsProvider;
 
-        public AlbumsController(IAlbumsProvider albumsProvider)
+        public AlbumsController()
         {
-            _albumsProvider =albumsProvider
+            _albumsProvider = new AlbumsProvider();
         }
 
         [HttpGet]
